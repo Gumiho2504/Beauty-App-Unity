@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ProductButtonController : MonoBehaviour
@@ -74,6 +75,10 @@ public class ProductButtonController : MonoBehaviour
         eyelahesTxt.color = Color.gray;
         lipstickTxt.color = seletedColor;
         creamTxt.color = Color.gray;
+    }
+    public void HomeBtn()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }// end of class
